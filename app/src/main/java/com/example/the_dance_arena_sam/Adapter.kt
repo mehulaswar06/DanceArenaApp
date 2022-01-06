@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.view.view.*
 class Adapter(var dance:List<danceData>): RecyclerView.Adapter<myViewHolder>() {
     class myViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var title = view.title
-        var danceimg=view.dance_img
+
 
 
     }
