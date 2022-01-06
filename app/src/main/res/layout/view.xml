@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:elevation="30dp"
-        android:src="@drawable/ic_mars" />
+        android:src="@drawable/Sattriya_dance" />
 
 
     <androidx.cardview.widget.CardView
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-7dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Dance Form"
+                android:text="Andhra Pradesh"
                 android:textColor="@color/subtext"
                 android:textSize="12sp" />
 
@@ -79,35 +79,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="23dp"
-                    android:src="@drawable/ic_distance"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="23dp"-->
+<!--                    android:src="@drawable/ic_distance"/>-->
                 <TextView
                     android:id="@+id/distance"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="2dp"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="54.6m km"
+                    android:text="Anamika Nevase"
                     android:textColor="@color/subtext"
                     android:textSize="12sp"
                     />
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="23dp"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/ic_gravity"/>
-                <TextView
-                    android:id="@+id/gravity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="3.711 m/ss"
-                    android:textColor="@color/subtext"
-                    android:textSize="12sp"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="23dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:src="@drawable/ic_gravity"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/gravity"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    android:fontFamily="@font/poppins_regular"-->
+<!--                    android:text="3.711 m/ss"-->
+<!--                    android:textColor="@color/subtext"-->
+<!--                    android:textSize="12sp"-->
+<!--                    />-->
             </LinearLayout>
 
         </LinearLayout>
