@@ -9,11 +9,11 @@
     android:padding="10dp">
 
     <ImageView
-        android:id="@+id/planet_img"
+        android:id="@+id/dance_img"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:elevation="30dp"
-        android:src="@drawable/Sattriya_dance" />
+        android:src="@drawable/sattriya_dance" />
 
 
     <androidx.cardview.widget.CardView
@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Kuchipudi"
+                    android:text="Bharatnatyam"
                     android:textColor="@color/white"
                     android:textSize="23sp"
                     android:textStyle="bold" />
@@ -57,7 +57,7 @@
 
 
             <TextView
-                android:id="@+id/galaxy"
+                android:id="@+id/origin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-7dp"
@@ -84,7 +84,7 @@
 <!--                    android:layout_height="23dp"-->
 <!--                    android:src="@drawable/ic_distance"/>-->
                 <TextView
-                    android:id="@+id/distance"
+                    android:id="@+id/exponent"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="2dp"

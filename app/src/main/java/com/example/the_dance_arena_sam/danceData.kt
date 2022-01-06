@@ -4,6 +4,6 @@ data class danceData(
     val id:Int?,
     val title:String?,
     val origin:String?,
-    val exponents:String?,
+    val exponent:String?,
     val overview:String?
 )
