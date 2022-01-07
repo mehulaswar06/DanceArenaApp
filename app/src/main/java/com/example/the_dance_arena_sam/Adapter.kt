@@ -1,5 +1,6 @@
 package com.example.the_dance_arena_sam
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,6 +25,12 @@ class Adapter(var dance:List<danceData>): RecyclerView.Adapter<Adapter.myViewHol
 
     override fun onBindViewHolder(holder: myViewHolder, position: Int) {
         var dummyImage:Int?=null
+        holder.itemView.setOnClickListener{
+            val intent= Intent(holder.itemView.context,DanceFormsDetails::class.java)
+            intent.putExtra("planet",dance[position])
+            intent.putExtra("planetImage",dummyImage)
+            holder.itemView.context.startActivity(intent)
+
         holder.title.text=dance[position].title
         holder.origin.text=dance[position].origin
         holder.exponent.text=dance[position].exponent

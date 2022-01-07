@@ -57,7 +57,7 @@
                 android:paddingTop="60dp">
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/title_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semibold"
@@ -94,7 +94,7 @@
                     <!--                    android:layout_height="23dp"-->
                     <!--                    android:src="@drawable/ic_distance"/>-->
                     <TextView
-                        android:id="@+id/exponent"
+                        android:id="@+id/exponent_details"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
@@ -176,15 +176,17 @@
 
             </ScrollView>
 
-            <TextView
-                android:id="@+id/button_deatils"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@drawable/bg_footer"
-                android:elevation="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="" />
+<!--            IF WE ADD FOOTER-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/button_deatils"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/bg_footer"-->
+<!--                android:elevation="10dp"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:text="" />-->
 
 
         </LinearLayout>
