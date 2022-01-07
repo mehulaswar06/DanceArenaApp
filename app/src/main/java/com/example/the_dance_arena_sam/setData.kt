@@ -1,5 +1,7 @@
 package com.example.the_dance_arena_sam
 
+import com.example.planeto.danceData
+
 object setData {
     fun SetDance():List<danceData> {
         var Dancelist = mutableListOf<danceData>()

@@ -1,4 +1,4 @@
-package com.example.the_dance_arena_sam
+package com.example.planeto
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -12,7 +12,6 @@ data class danceData(
 ):Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readValue(Int::class.java.classLoader) as? Int,
-        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -43,4 +42,3 @@ data class danceData(
     }
 
 }
-
