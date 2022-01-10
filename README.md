@@ -10,6 +10,9 @@ India’s classical dance forms were thought to be evergreen throughout the exis
 
 नृत्यांगना - The Dance Arena is an initiative to preserve the Indian culture and history by bringing awareness among the young generation about the classical Dance forms. Dance and Music play a very important role. They soothe and relax the minds of over-stressed school-children and at the same time they educate the children and stimulate their concentration and creativity. Cultural education also promotes further interest and helps discover talents among students. Thus some students may find their vocation in Indian Classical Dance and Music. If one wants to learn this important part of our Vedic culture one comes across countless disciplines, which enrich and refine the human personality and make it more and more divine. But, as we know the school education is focused only on getting good grades and not on imparting knowledge about cultural heritage and mythological instances. We are proposing नृत्यांगना - The Dance Arena to enlighten the society about the diminishing forms of Indian Classical Dance.
 
+<b> Workflow Image : </b>
+![App-Workflow](App_Workflow.png)
+
 <b> Functionality & Concepts used : </b>
 
  The App has a very simple and interactive interface which helps the user to navigate the app easily and explore the different Indian Classical Dance Forms while elaborating the common aspects involved in every dance form. Following are few android concepts used to achieve the functionalities in app :
