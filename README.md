@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# The_Dance_Arena_App
 
-Made in Kotlin 
-=======
 # नृत्यांगना - The Dance Arena 
 
 
@@ -32,4 +28,3 @@ Furthermore, after the basic certification you will be encouraged for the next s
 
 <b> For more details, reach out : [Sanmitha Shetty](https://www.linkedin.com/in/sanmithashetty07/)   [Mehul Aswar](https://www.linkedin.com/in/mehulaswar06/)   [Anamika Nevase](https://www.linkedin.com/in/anamikanevase4433/) </b>
 
->>>>>>> f78c0a1b7558e991e98a04cf5c4ea35c1de811ba
