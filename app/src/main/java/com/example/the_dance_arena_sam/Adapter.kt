@@ -1,17 +1,17 @@
 package com.example.planeto
 
-import android.content.Intent
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.the_dance_arena_sam.DanceFormsDetails
 import com.example.the_dance_arena_sam.R
-
-
+import com.example.the_dance_arena_sam.common.DanceData
+import com.example.the_dance_arena_sam.fragment_mainDirections
 import kotlinx.android.synthetic.main.view.view.*
 
-class Adapter(var dance: List<danceData>) : RecyclerView.Adapter<Adapter.myViewHolder>() {
+class Adapter(var dance: List<DanceData>) : RecyclerView.Adapter<Adapter.myViewHolder>() {
 
     class myViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var title = view.title
@@ -22,6 +22,7 @@ class Adapter(var dance: List<danceData>) : RecyclerView.Adapter<Adapter.myViewH
 
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myViewHolder {
         var itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.view, parent, false)
@@ -30,16 +31,12 @@ class Adapter(var dance: List<danceData>) : RecyclerView.Adapter<Adapter.myViewH
 
     override fun onBindViewHolder(holder: myViewHolder, position: Int) {
         var dummyImage: Int? = null
-        holder.itemView.setOnClickListener{
-            val intent= Intent(holder.itemView.context, DanceFormsDetails::class.java)
-            intent.putExtra("dance",dance[position])
-            intent.putExtra("danceImage",dummyImage)
-            holder.itemView.context.startActivity(intent)
+        var dummyPoster: Int?=null
 
-        }
         holder.title.text = dance[position].title
         holder.origin.text = dance[position].origin
         holder.exponent.text = dance[position].exponent
+
 
 
         when (dance[position].title!!.lowercase()) {
@@ -52,7 +49,7 @@ class Adapter(var dance: List<danceData>) : RecyclerView.Adapter<Adapter.myViewH
             "kathakali" -> {
                 dummyImage = R.drawable.kathakali_dance
             }
-            "katthak" -> {
+            "kathak" -> {
                 dummyImage = R.drawable.katthak_dance
             }
             "manipuri" -> {
@@ -67,15 +64,73 @@ class Adapter(var dance: List<danceData>) : RecyclerView.Adapter<Adapter.myViewH
             "sattriya" -> {
                 dummyImage = R.drawable.sattriya_dance
             }
+            else -> {
+                dummyImage = R.drawable.bharatnatyam_dance
+
+            }
 
 
         }
+
+
+
         holder.danceimg.setImageResource(dummyImage!!)
+        holder.itemView.setOnClickListener {
+            val action = fragment_mainDirections.actionFragmentMainToFragmentDanceForms(
+                dancedetails = dance[position],
+                danceimages = dummyImage!!,
+                posterimages = dummyPoster!!
+            )
+            holder.itemView.findNavController().navigate(action)
 
 
+        }
+        when (dance[position].title!!.lowercase()) {
+            "kuchipudi" -> {
+                dummyPoster = R.drawable.kuchipudi_poster
+            }
+            "bharatnatyam" -> {
+                dummyPoster = R.drawable.bharatnatyam_poster
+            }
+            "kathakali" -> {
+                dummyPoster = R.drawable.kathakali_poster
+            }
+            "kathak" -> {
+                dummyPoster = R.drawable.kathak_poster
+            }
+            "manipuri" -> {
+                dummyPoster = R.drawable.manipuri_poster
+            }
+            "mohiniyattam" -> {
+                dummyPoster = R.drawable.mohiniyattam_poster
+            }
+            "odissi" -> {
+                dummyPoster = R.drawable.odissi_poster
+            }
+            "sattriya" -> {
+                dummyPoster = R.drawable.sattriya_poster
+            }
+            else -> {
+                dummyPoster = R.drawable.sattriya_poster
+
+            }
+
+        }
+        holder.danceimg.setImageResource(dummyImage!!)
+        holder.itemView.setOnClickListener {
+            val action = fragment_mainDirections.actionFragmentMainToFragmentDanceForms(
+                dancedetails = dance[position],
+                danceimages = dummyImage!!,
+                posterimages = dummyPoster!!
+            )
+            holder.itemView.findNavController().navigate(action)
+
+        }
     }
 
-    override fun getItemCount(): Int {
-        return dance.size
+
+
+        override fun getItemCount(): Int {
+            return dance.size
+        }
     }
-}

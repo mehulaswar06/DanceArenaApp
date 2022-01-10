@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.the_dance_arena_sam.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_dance_forms"
+            app:destination="@id/fragment_dance_forms" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_dance_forms"
+        android:name="com.example.the_dance_arena_sam.Fragment_dance_forms"
+        android:label="fragment_dance_forms"
+        tools:layout="@layout/fragment_dance_forms" >
+        <argument
+            android:name="dancedetails"
+            app:argType="com.example.the_dance_arena_sam.common.DanceData" />
+        <argument
+            android:name="danceimages"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragment_dance_forms_to_fragmentWatch"
+            app:destination="@id/fragmentWatch" />
+        <argument
+            android:name="posterimages"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWatch"
+        android:name="com.example.the_dance_arena_sam.FragmentWatch"
+        android:label="fragment_watch"
+        tools:layout="@layout/fragment_watch" >
+        <argument
+            android:name="postergraphics"
+            app:argType="integer" />
+        <argument
+            android:name="posterdetails"
+            app:argType="com.example.the_dance_arena_sam.common.DanceData" />
+        <argument
+            android:name="posterimages"
+            app:argType="integer" />
+    </fragment>
+</navigation>

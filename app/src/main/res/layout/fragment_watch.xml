@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentWatch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/poster_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="40dp"
+            android:src="@drawable/bharatnatyam_poster" />
+<!--        <TextView-->
+<!--            android:id="@+id/text_in_poster"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Bharatnatyam"-->
+<!--            android:textColor="@color/white"/>-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

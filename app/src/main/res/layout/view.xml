@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/dance_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
         android:elevation="30dp"
         android:src="@drawable/sattriya_dance" />
 
@@ -19,10 +19,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="125dp"
-        android:layout_marginStart="-60dp"
+        android:layout_marginStart="-75dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/secondary"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="10dp"
         app:cardElevation="20dp">
 
         <LinearLayout
@@ -45,7 +45,7 @@
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Bharatnatyam"
                     android:textColor="@color/white"
-                    android:textSize="23sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <ImageView
