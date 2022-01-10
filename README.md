@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# The_Dance_Arena_App
 
-Made in Kotlin 
-=======
 # नृत्यांगना - The Dance Arena 
 
 
@@ -13,6 +9,9 @@ India’s classical dance forms were thought to be evergreen throughout the exis
 <b> Proposed Solution : </b>
 
 नृत्यांगना - The Dance Arena is an initiative to preserve the Indian culture and history by bringing awareness among the young generation about the classical Dance forms. Dance and Music play a very important role. They soothe and relax the minds of over-stressed school-children and at the same time they educate the children and stimulate their concentration and creativity. Cultural education also promotes further interest and helps discover talents among students. Thus some students may find their vocation in Indian Classical Dance and Music. If one wants to learn this important part of our Vedic culture one comes across countless disciplines, which enrich and refine the human personality and make it more and more divine. But, as we know the school education is focused only on getting good grades and not on imparting knowledge about cultural heritage and mythological instances. We are proposing नृत्यांगना - The Dance Arena to enlighten the society about the diminishing forms of Indian Classical Dance.
+
+<b> Workflow Image : </b>
+![App-Workflow](App_Workflow.png)
 
 <b> Functionality & Concepts used : </b>
 
@@ -26,10 +25,11 @@ India’s classical dance forms were thought to be evergreen throughout the exis
 
 <b> Application Link & Future Scope : </b>
 
+The link for our app : [नृत्यांगना - The Dance Arena ](https://github.com/mehulaswar06/DanceArenaApp.git).
+
 In the near future, you will be seeing a streak feature wherein each streak (like Duolingo) will represent a step-by-step ladder containing elements to help you know your interest towards a specific dance form and guide you to achieve basic understanding about the dance form. This will result in achieving the basic certification. 
 
 Furthermore, after the basic certification you will be encouraged for the next step in learning the nitty gritties of the chosen dance form.
 
 <b> For more details, reach out : [Sanmitha Shetty](https://www.linkedin.com/in/sanmithashetty07/)   [Mehul Aswar](https://www.linkedin.com/in/mehulaswar06/)   [Anamika Nevase](https://www.linkedin.com/in/anamikanevase4433/) </b>
 
->>>>>>> f78c0a1b7558e991e98a04cf5c4ea35c1de811ba
